@@ -58,8 +58,8 @@
         <i class="fal fa-question"></i> Where can I find these 'HAR' files
         <h6>We provide you with simple steps below to help you get the information you need. </h6>
         <br>
-        <i class="fal fa-shoe-prints"></i> Step 1: Open your browser. Click on the setting icon. Navigate to 'More tools' and click 'Developer Tools'.<br><br>
-        <img class='step' src="steps/step1.png" alt='step 1'>
+        <i class="fal fa-shoe-prints"></i> Step 1: Open your browser. Click on the settings icon. Navigate to 'More tools' and click 'Developer Tools'.<br><br>
+        <img class='step' src="steps/step1.png" alt='step 1'><br>
         <i class="fal fa-wrench"></i>
     </div>
     <div id='upload'>Upload div <i class="fal fa-wrench"></i></div>

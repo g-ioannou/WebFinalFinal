@@ -72,6 +72,7 @@ a:hover {
 	transition: all 0.2s ease-in-out;
 }
 
+
 .top {
 	color: #21333b;
 	position: relative;
@@ -170,4 +171,10 @@ body h6 {
     margin-left:18%;
     border: 1px #40af5e solid;
     border-radius: 3%;
+}
+
+#upload{
+    position: absolute;
+    top:500px;
+    left:500px;
 }
