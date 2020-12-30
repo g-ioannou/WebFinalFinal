@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+
+
+
+body {
+	color: #21333b;
+	padding: 0;
+	margin: 0;
+	font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    
+}
+
+li {
+	list-style-type: none;
+}
+.drp-menu {
+    width: 300px;
+    position: fixed;
+    top:0px;
+	z-index: 1;
+	background: white;
+	border-right: 1px #21333b solid;
+	height: 100%;
+}
+.drp-menu ul{
+    padding:0px;
+}
+
+#close-menu{
+    position: absolute;
+    left:230px;
+}
+
+.drp-menu ul li{
+    width: 300px;
+    border-bottom: 1px #21333b solid;
+    
+}
+
+.drp-menu button {
+	background: none;
+	color: #21333b;
+	height: 70px;
+	font-size: 30px;
+	padding: 0px;
+    border: none;
+    padding-left: 20px;
+    
+}
+
+button {
+	color: #21333b;
+	outline: none;
+}
+
+button:hover {
+	color: #40af5e;
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: all 0.2s ease-in-out;
+}
+
+a {
+	color: #21333b;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #40af5e;
+	transform: scale(1.1);
+	transition: all 0.2s ease-in-out;
+}
+
+.top {
+	color: #21333b;
+	position: relative;
+	height: 50px;
+	padding: 15px;
+	padding-top: 0px;
+	border-bottom: 1px #21333b solid;
+}
+
+.fal {
+	font-size: 35px;
+}
+
+.far {
+	font-size: 35px;
+}
+
+#profile {
+	background-color: transparent;
+	border: none;
+	padding: 15px;
+	font-size: large;
+	float: right;
+}
+
+#logout {
+	padding: 15px;
+	padding-right: 30px;
+	float: right;
+}
+
+#menu-btn {
+	position: relative;
+	background: none;
+	border: none;
+	float: left;
+	padding: 15px;
+}
+
+#background {
+	position: fixed;
+	opacity: 0.2;
+	height: 500px;
+	left: 35%;
+	top: 20%;
+	z-index: -1;
+}
+
+#logo {
+	position: relative;
+	left: 40%;
+	user-select: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #21333b;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #40af5e;
+}
+
+#logo-short{
+    position: absolute;
+    height:100px;
+    top: 90%;
+
+}
+
+#faq {
+    font-size: 45px;
+    padding: 100px;
+}
+
+.fa-question{
+    font-size: 50px;
+}
+body h6 {
+    margin: 0;
+}
+
+.step{
+    width: 1000px;
+    margin-left:18%;
+    border: 1px #40af5e solid;
+    border-radius: 3%;
+}
