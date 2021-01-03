@@ -89,7 +89,7 @@ function checkIfHar(fileList) {
    if (flag == true) {
       $("#upload-btn").click();
    }
-}
+}        
 
 $("#upload-btn").on("click", function (e) {
    e.preventDefault();

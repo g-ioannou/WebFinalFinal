@@ -56,8 +56,10 @@
                             class="fal fa-chart-pie"></i></i> Stats & Graphs</button> </li>
                 <li><button title='Navigate to Heatmap' class='inner-menu-btn' id='heatmap-btn'><i
                             class="fal fa-map-marked"></i> Heatmap</button></li>
-                <li><button title='Navigate to Frequently Asked questions ' class='inner-menu-btn' id='faq-btn'><i
-                            class="fal fa-question-circle"></i> F.A.Q.</button></li>
+                <li><button title='Navigate to Frequently Asked questions ' class='inner-menu-btn' id='faq-btn'>
+                        <i class="fal fa-question-circle">
+                        </i> F.A.Q.
+                    </button></li>
             </ul>
         </div>
 
@@ -103,8 +105,8 @@
             <div class="uploaded-files">
                 <div id="list-category-name"> File name </div>
                 <div id="list-category-delete">Discard </div>
-                <div id="list-category-upload">Upload to server</div>
-                <div id="list-category-sanitized">Download Sanitized </div>
+                <div id="list-category-upload">Upload to <br> server</div>
+                <div id="list-category-sanitized">Download<br>Sanitized </div>
                 <ul class='files-list'>
                     <li class='uploaded-file'><i class="fal fa-file"></i>filesdfsdf <button id='delete-btn'><i
                                 class="fal fa-trash-alt"></i> </button><button id='upload-server-btn'><i
@@ -113,8 +115,8 @@
                                 class="fal fa-trash-alt"></i> </button><button id='upload-server-btn'><i
                                 class="fal fa-arrow-to-top"></i> </button></li>
                     <li class='uploaded-file'><i class="fal fa-file"></i>file sdfsd3<button id='delete-btn'><i
-                                class="fal fa-trash-alt"></i> </button><button id='upload-server-btn'><i
-                                class="fal fa-arrow-to-top"></i> </button></li>
+                                class="fal fa-trash-alt"></i> </button><button id='upload-server-btn'>
+                            <i class="fal fa-arrow-to-top"></i> </button></li>
 
                 </ul>
 
