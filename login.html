@@ -7,7 +7,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="login_main.js"></script>
     <script src="password.js"></script>
+    <link rel="stylesheet" href="login_password.css">
     <link rel="stylesheet" href="login.css">
+    
     
     
     <title>LOGIN AND REGISTRATION</title>
@@ -16,92 +18,101 @@
 
 <body>
 
-<div class="back">
+
     <div class="form-box">
 
-        <br>  
-
+        <!-- <button type="button" class="toggle-btn" id="main_login">Sign in</button> -->
         
-        <button type="button" class="toggle-btn" id="main_login">Sign in</button>
-        <button type="button" class="toggle-btn" id="main_register">Create Acount</button>
-        
-
-
-        <br>
-        <br>
 
         <!--Registration Form-->
 
         <form action="login_form.php" id="registration" name="registration" method="post">
 
+            <h3>Create account</h3>
+
             <div id="register_error"></div>
 
             <div class="form-user">
-                <label for="firstname">Firstname:</label>
-                <input type="text" class="form-control" id="firstname" placeholder="George" name="firstname" required="">
+                <input type="text" class="form-control" id="firstname" placeholder="Firstname" name="firstname" required="">
                 <span class="error_form" id="firstname_error_message"></span>
             </div>
 
             <div class="form-user">
-                <label for="lastname">Lastname:</label>
-                <input type="text" class="form-control" id="lastname" placeholder="Papadopoulos" name="lastname" required="">
+                <input type="text" class="form-control" id="lastname" placeholder="Lastname" name="lastname" required="">
                 <span class="error_form" id="lastname_error_message"></span>
             </div>
 
             <div class="form-user">
-                <label for="username">Username:</label>
-                <input type="text" class="form-control" id="username" placeholder="papad_geo" name="username" required="">
+                <input type="text" class="form-control" id="username" placeholder="Username" name="username" required="">
                 <span class="error_form" id="username_error_message"></span>
             </div>
 
             <div class="form-user">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email_reg" placeholder="george_papad@gmail.com" name="email"
+                <input type="email" class="form-control" id="email_reg" placeholder="Email" name="email"
                     required="">
                 <span class="error_form" id="email_error_message"></span>
                 <br>
             </div>
 
             <div class="form-user">
-                <label for="password">Password:</label>
-                <input type="password" class="form-control" id="password_reg" placeholder="ak24g!r5" name="password"
+                <input type="password" class="form-control" id="password_reg" placeholder="Password" name="password"
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="" >
                 <span class="error_form" id="password_error_message"></span>
                 <br>
                 <!-- An element to toggle between password visibility -->
-                <input type="checkbox" id="check_reg">Show Password
+                <input type="checkbox" onchange="document.getElementById('password_reg').type = this.checked ? 'text' : 'password'">Show password
+                <!-- <input type="checkbox" id="check_reg">Show password -->
+                <br>
+            </div>
                 <br>
 
                 <input type="button" name="register" class="btn_reg" value="Sign up" id="register_btn">
-            </div>
+                or <a href="login.html">Log In</a>
+            
             
         </form>
 
+    </div>
+
 
             <!--Login Form-->
+    <div class="login">
 
-            <form action="login_form.php" id="login" name="login" method="post"> 
+
+        <form action="login_form.php" id="login" name="login" method="post"> 
+
+                <h1>Log In</h1>
                 
                 <div id="login_error"></div>
 
-                <div class="form-user">           
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email_log" placeholder="email" name="email" required=""> 
+                <div class="form-user">      
+                    <input type="email" class="form-control" id="email_log" placeholder="Email" name="email" required=""> 
                 </div>
 
-                <div class="form-user">
-                    <label for="password">Password:</label>
-                    <input type="password" class="form-control" id="password_log" placeholder="password" name="password" 
+                <div class="form-user">                
+                    <input type="password" class="form-control" id="password_log" placeholder="Password" name="password" 
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must be at least 8 characters. Requirements: at least one lowercase letter, one uppercase letter, one number and one special character." required=""> 
                     <br>
                     <!-- An element to toggle between password visibility -->
-                    <input type="checkbox" id="check_log">Show Password
+                    <input type="checkbox" onchange="document.getElementById('password_log').type = this.checked ? 'text' : 'password'">Show password
+                    <!-- <input type="checkbox" id="check_log">Show Password -->
+                    <br>
+                    <a href="resetpass.php">Forgot Password?</a>
                     <br>
                     <input type="button" name="login" class="btn btn-primary" value="Sign in" id="login_btn">
+                    
                 </div>
-                
-            </form>
-            <div id="password_reg_info">
+
+                <div class="donthave">
+                    <p id="forReg">If you still don't have a harrow account, use this option to access the registration form.</p>
+                    <button type="button" class="toggle-btn" id="main_register">Create Acount</button>
+                </div>
+        
+        </form>
+
+    </div>
+    
+        <div id="password_reg_info">
                 <h4>Password must meet the following requirements:</h4>
                 <ul>
                     <li id="letter" class="invalid">At least <strong>one lowercase letter.</strong></li>
@@ -110,8 +121,8 @@
                     <li id="symbol" class="invalid">At least <strong>one spesial character e.g. (!@#$%^&*).</strong></li>
                     <li id="length" class="invalid">Be at least <strong>8 characters.</strong></li>
                 </ul>
-            </div>
-</div>
+        </div>
+
 </div>
 
 

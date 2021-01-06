@@ -1,9 +1,9 @@
 <?php 
     
     include "connection_db.php";
-    //if(!isset($_SESSION['email'])){
-      //  header('Location: home.php');
-    //}
+    if(!isset($_SESSION['email'])){
+        header('Location: home.php');
+    }
 
     if($_POST['type'] == 3){
         $username = $_POST['username'];

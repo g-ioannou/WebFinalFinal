@@ -1,11 +1,12 @@
 <?php 
+    session_start();
     include "connection_db.php";
     if(!isset($_SESSION['email'])){
         header('Location: login.html');
     }
     
     if(!isset($_SESSION['email'])){
-        header('Location: profile.html');
+        header('Location: profile.php');
     }
 
 
@@ -23,7 +24,7 @@
     <br>
 
     <!--Edit profile-->
-    <a href="profile.html">Edit profile</a>
+    <a href="profile.php">Edit profile</a>
     
     
     <!--user logout-->

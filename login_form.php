@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 include 'connection_db.php';
 
 if($_POST['type'] == 1){
@@ -18,7 +19,6 @@ if($_POST['type'] == 1){
     else{
         echo "fail";
     }
-    mysqli_close($conn); //may not needed
 
 }       
 
@@ -40,16 +40,16 @@ if($_POST['type'] == 2){
     if( $num_email == 0){
         if( $num_username == 0){
             $sql = mysqli_query($conn, "INSERT INTO `user` ( `firstname`, `lastname`, `username`, `email`, `password`) VALUES ('$firstname','$lastname','$username','$email', '$password')");
+            $_SESSION['email'] = $row['email'];
             echo "success";
         }
         else {
-            echo 'fail_user';
-        }
+            echo "fail_user";
+        }   
     }
     else{
-        echo 'fail_email';
+        echo "fail_emai";
     }
-
 }
 
 

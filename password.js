@@ -1,26 +1,4 @@
-//show password text in login
-$(document).ready(function(){
-    $('#check_log').click(function () {
-        var password_log = $("#password_log").val();
-        if ($('#password_log').attr('type') == 'text') {
-            $('#password_log').attr('type', 'password');
-        } else {
-            $('#password_log').attr('type', 'text');
-        }   
-    });
-});
 
-//show password text in register
-$(document).ready(function(){
-    $('#check_reg').click(function () {
-        var password_reg = $("#password_reg").val();
-        if ($('#password_reg').attr('type') == 'text') {
-            $('#password_reg').attr('type', 'password');
-        } else {
-            $('#password_reg').attr('type', 'text');
-        }   
-    });
-}); 
 
 //show box for validate password
 $(document).ready(function() {
