@@ -124,7 +124,7 @@ a:hover {
 	font-size: 35px;
 }
 
-#profile {
+#profile-btn {
 	background-color: transparent;
 	border: none;
 	padding: 15px;
@@ -320,21 +320,37 @@ body .upload-msg {
 	background: white;
 	top: 62px;
 	left: 790px;
-	font-size: 21px;
+	font-size: 19px;
 	text-align: center;
 	line-height: 22px;
 }
 
-.uploaded-file #delete-btn {
+.uploaded-file .delete-btn {
 	position: absolute;
 	left: 600px;
 	background: none;
 	border: none;
 }
 
-.uploaded-file #upload-server-btn {
+.uploaded-file .upload-server-btn {
 	position: absolute;
 	left: 710px;
 	background: none;
 	border: none;
+}
+
+.uploaded-file .file-icon {
+	padding-right: 20px;
+}
+
+.uploaded-file .download-btn {
+	position: absolute;
+	left: 810px;
+	background: none;
+	border: none;
+	}
+
+.no-files-message {
+	line-height: 400px;
+	text-align: center;
 }

@@ -41,7 +41,7 @@
             <img id="logo" src="logo.png" alt="Harrow logo" title="Harrow">
             <button id="menu-btn" title="Menu"> <i class="fal fa-bars"></i></button>
             <a id="logout" href="logout.php" title="Log out"><i class="fal fa-sign-out-alt"></i></img></a>
-            <button id='profile' title="Profile"><i class="fal fa-user"></i></i> </button>
+            <button id='profile-btn' title="Profile"><i class="fal fa-user"></i></i> </button>
         </div>
         <div class='drp-menu'>
             <img id="logo-short" src="logo_short.png" alt="Harrow logo" title="Harrow">
@@ -49,17 +49,18 @@
             <button title='Close Menu' id="close-menu"><i class="fal fa-expand-arrows"></i></button>
             <ul>
                 <li><button title='Navigate to Uploads' class='inner-menu-btn' id='upload-nav'>
-                        <i class="fal fa-upload"></i>
-                        Upload
-                    </button></li>
-                <li><button title='Navigate to Stats and Graphs' class='inner-menu-btn' id='stats-btn'><i
-                            class="fal fa-chart-pie"></i></i> Stats & Graphs</button> </li>
-                <li><button title='Navigate to Heatmap' class='inner-menu-btn' id='heatmap-btn'><i
-                            class="fal fa-map-marked"></i> Heatmap</button></li>
+                        <i class="fal fa-upload"></i>Upload</button>
+                </li>
+                <li><button title='Navigate to Stats and Graphs' class='inner-menu-btn' id='stats-btn'>
+                        <i class="fal fa-chart-pie"></i>Stats & Graphs</button>
+                </li>
+                <li><button title='Navigate to Heatmap' class='inner-menu-btn' id='heatmap-btn'>
+                        <i class="fal fa-map-marked"></i> Heatmap</button>
+                </li>
                 <li><button title='Navigate to Frequently Asked questions ' class='inner-menu-btn' id='faq-btn'>
                         <i class="fal fa-question-circle">
-                        </i> F.A.Q.
-                    </button></li>
+                        </i> F.A.Q.</button>
+                </li>
             </ul>
         </div>
 
@@ -100,32 +101,39 @@
                 <br /><br />
             </div>
 
-            <script src="upload.js" type="text/javascript"></script>
+
+
 
             <div class="uploaded-files">
                 <div id="list-category-name"> File name </div>
                 <div id="list-category-delete">Discard </div>
                 <div id="list-category-upload">Upload to <br> server</div>
                 <div id="list-category-sanitized">Download<br>Sanitized </div>
+
                 <ul class='files-list'>
-                    <li class='uploaded-file'><i class="fal fa-file"></i>filesdfsdf <button id='delete-btn'><i
-                                class="fal fa-trash-alt"></i> </button><button id='upload-server-btn'><i
-                                class="fal fa-arrow-to-top"></i> </button></li>
-                    <li class='uploaded-file'><i class="fal fa-file"></i>file 2wefwef<button id='delete-btn'><i
-                                class="fal fa-trash-alt"></i> </button><button id='upload-server-btn'><i
-                                class="fal fa-arrow-to-top"></i> </button></li>
-                    <li class='uploaded-file'><i class="fal fa-file"></i>file sdfsd3<button id='delete-btn'><i
-                                class="fal fa-trash-alt"></i> </button><button id='upload-server-btn'>
-                            <i class="fal fa-arrow-to-top"></i> </button></li>
-
+                    <li class='uploaded-file'>
+                        <i id='12 ' class="file-icon fal fa-file"></i>filesdfsdf
+                        <a class='download-uri' hidden>fawe</a>
+                        <button class='delete-btn'><i class=" fal fa-trash-alt"></i> </button>
+                        <button class='upload-server-btn'><i class="fal fa-arrow-to-top"></i></button>
+                        <button class="download-btn"><i class="fal fa-download"></i></button>
+                    </li>
+                    <li class='uploaded-file'>
+                        <i id='22 ' class="file-icon fal fa-file"></i>filesdfsdf
+                        <a class='download-uri' hidden>fawe</a>
+                        <button class='delete-btn'><i class=" fal fa-trash-alt"></i> </button>
+                        <button class='upload-server-btn'><i class="fal fa-arrow-to-top"></i></button>
+                        <button class="download-btn"><i class="fal fa-download"></i></button>
+                    </li>
                 </ul>
-
+                <div class="no-files-message">Your files will be displayed here</div>
             </div>
         </div>
         <div id='stats'>Stats div <i class="fal fa-wrench"></i></div>
         <div id='heatmap'>Heatmap div <i class="fal fa-wrench"></i></div>
-    </div>
-    <script src="style.js"></script>
+        <div id='profile'> Profile div <i class="fal fa-wrench"></i></div>
+        <script src="style.js"></script>
 </body>
+<script src="upload.js" type="text/javascript"></script>
 
 </html>
